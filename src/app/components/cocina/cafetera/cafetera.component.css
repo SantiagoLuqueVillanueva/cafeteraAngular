@@ -1,0 +1,10 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.botones {
+  display: flex;
+  gap: 0.5rem;
+}

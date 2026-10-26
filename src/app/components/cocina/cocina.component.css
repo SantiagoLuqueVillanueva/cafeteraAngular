@@ -1,0 +1,11 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+app-cafetera {
+  display: block;
+  border: 1px solid gray;
+  padding: 1rem;
+}

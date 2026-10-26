@@ -1,0 +1,4 @@
+<button class="botones" (click)="encenderCafetera()" [disabled]="!estadoConexionCocina()">{{ estadoCafetera && estadoConexionCocina() ? 'Apagar' : 'Encender' }}</button>
+<button class="botones" (click)="cafeSolo()" [disabled]="!estadoCafetera || !estadoConexionCocina()">Cafe Solo</button>
+<button class="botones" (click)="cafeConLeche()" [disabled]="!estadoCafetera || !estadoConexionCocina()">Cafe con Leche</button>
+<span>{{ this.cafesServidos }}</span>

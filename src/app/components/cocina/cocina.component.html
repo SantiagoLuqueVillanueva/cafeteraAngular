@@ -1,0 +1,7 @@
+<span>{{ this.estadoConexionComponent() ? 'ON' : 'OFF' }}</span>
+<app-cafetera
+[estadoConexionCocina]="estadoConexionComponent()"
+(estadoCafeteraOutput)="mandarEstadoCafetera($event)"
+(cafeSoloOutput)="mandarCafeSolo($event)"
+(cafeConLecheOutput)="mandarCafeConLeche($event)">
+</app-cafetera>
